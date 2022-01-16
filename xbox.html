@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Galería de imágenes de videojuegos</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/script.js'></script>
+</head>
+
+<body background="imgs/fondo.jpg">
+
+    <nav>
+        <ul>
+            <li><a href="playstation.html">Playstation</a></li>
+            <li><a href="nintendo.html">Nintendo</a></li>
+            <li><a href="xbox.html">Xbox</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <!-- Imágenes grandes -->
+        <div class="imgGrande imgs">
+
+            <img src="imgs/forza.jpg" style="width:100%">
+        </div>
+
+        <div class="imgs">
+
+            <img src="imgs/halo.jpg" style="width:100%">
+        </div>
+
+        <div class="imgs">
+
+            <img src="imgs/gears.jpg" style="width:100%">
+        </div>
+
+        <div class="imgs">
+
+            <img src="imgs/apex.jpg" style="width:100%">
+        </div>
+
+        <div class="imgs">
+
+            <img src="imgs/titanfall.jpg" style="width:100%">
+        </div>
+
+        <div class="imgs">
+
+            <img src="imgs/godfall.jpg" style="width:100%">
+        </div>
+
+
+
+        <!-- Botones siguiente y anterior de imagen -->
+        <a class="prev" onclick="ctrSigPrev(-1)">&#10094;</a>
+        <a class="sig" onclick="ctrSigPrev(1)">&#10095;</a>
+
+        <!-- Textos de imagen -->
+        <div class="contenedorTxt">
+            <p id="txtImg">Forza</p>
+        </div>
+
+        <!-- Imágenes inferiores -->
+        <div class="hilo">
+            <div class="columna">
+                <img class="opa cursor" src="imgs/forza.jpg" style="width:100%" onclick="ctrImg(1)" alt="Forza">
+            </div>
+            <div class="columna">
+                <img class="opa cursor" src="imgs/halo.jpg" style="width:100%" onclick="ctrImg(2)" alt="Halo">
+            </div>
+            <div class="columna">
+                <img class="opa cursor" src="imgs/gears.jpg" style="width:100%" onclick="ctrImg(3)" alt="Gears of war">
+            </div>
+            <div class="columna">
+                <img class="opa cursor" src="imgs/apex.jpg" style="width:100%" onclick="ctrImg(4)" alt="Apex legends">
+            </div>
+            <div class="columna">
+                <img class="opa cursor" src="imgs/titanfall.jpg" style="width:100%" onclick="ctrImg(5)" alt="Titanfall">
+            </div>
+            <div class="columna">
+                <img class="opa cursor" src="imgs/godfall.jpg" style="width:100%" onclick="ctrImg(6)" alt="Godfall">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

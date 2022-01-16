@@ -1,0 +1,107 @@
+/* Nav horizontal */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.imgs {
+    display: none;
+    width: 1000px;
+    margin-left: 21%;
+}
+
+.imgGrande {
+    display: block;
+    width: 1000px;
+    margin-left: 21%;
+}
+
+
+/* Botones siguiente y anterior */
+
+.prev,
+.sig {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+}
+
+
+/* Posiciona el botón derecha a la derecha */
+
+.sig {
+    right: 0;
+}
+
+
+/* Color de fondo de los botones cuando pasa el cursor por encima */
+
+.prev:hover,
+.sig:hover {
+    background-color: grey
+}
+
+
+/* Contenedor para imagen  */
+
+.contenedorTxt {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.hilo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columna {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Añade opacidad a las imágenes pequeñas */
+
+.opa {
+    opacity: 0.6;
+}
+
+.active,
+.opa:hover {
+    opacity: 1;
+}
